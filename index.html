@@ -7,20 +7,32 @@
     <link rel="stylesheet" href="../../Documents/Project2/style.css"/>
 </head>
 <body>
-    <p>
+    <h2>
         Project 2 - Magic Mirror
+    </h2>
+    <p>
+        Below is my original design for my mirror. I believe it incorporates all the required elements are demonstrates
+        a good way to design the smart mirror. It will show the weather, including both temperatures and the conditions currently and
+        upcoming conditions. Additionally, the mirror shows a breakdown of a daily schedule which can be changed day to day.
+        The mirror always keeps track of the user's current weight and previous weights along with the time of the user's sleep.
+        Along the bottom, it includes a updating summary of the top news events along with the author and the source of the information.
+        The mirror always has a clock and date built it for easy viewing and can sync with your phone to retrieve text messages,
+        emails, and allow you to play music.
     </p>
-    <img src="assets/sketchofmirror.png"  width="1088" height="779">
+    <img src="assets/sketchofmirror.png" alt="Sketch of my design" width="1088" height="779">
 </body>
-
-<!--<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>-->
 <script src="lib/p5.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>-->
-<script src="lib/p5.speech.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>-->
-<script src="lib/chart.js"></script>
-<!--<script src="https://d3js.org/d3.v7.min.js"></script>-->
-<script src="lib/d3.v7.min.js"></script>
-
+<body>
+    <p>
+        Below is my implementation of the design I created. As you can see most elements from my sketch made it into the final
+        design. The only element that I didn't implement was the phone widget allowing to view texts, emails, and play music.
+        However, all the other elements were included. The weather widget uses an API for the current temperature and conditions and
+        upcoming temperature and conditions in Lubbock. These are updated as the weather forecast is updated. Additionally,
+        the news section at the bottom uses the New York Times API to list the current top 3 news stories and is updated automatically
+        periodically. The time and date are accurate and update as you are using the mirror. Additionally, both the personal schedule
+        element and the health information elements use JSON to receive data to display. Updating the JSON files will update the information
+        displayed on screen.
+    </p>
+</body>
 <script src="sketch.js"></script>
 </html>

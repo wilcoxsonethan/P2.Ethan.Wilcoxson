@@ -40,12 +40,6 @@ function setup() {
     futureTemp = json.properties.periods[1].temperature;
     futureWeather = json.properties.periods[1].shortForecast;
 
-    //Date and Time
-    today = new Date();
-    dd = String(today.getDate()).padStart(2, '0');
-    mm = String(today.getMonth() + 1).padStart(2, '0');
-    today = mm + '/' + dd
-
     //News Information from New York Times API
     copyright = newsAPI.copyright;
     firstAuthor = newsAPI.results[0].byline;
@@ -79,6 +73,11 @@ function setup() {
     sleepTime2 = healthData.healthData[1].sleepTime;
 }
 function draw() {
+    //Current time and date information
+    today = new Date();
+    dd = String(today.getDate()).padStart(2, '0');
+    mm = String(today.getMonth() + 1).padStart(2, '0');
+    today = mm + '/' + dd
     hr = hour();
     min = minute();
     if (min < 10) {
