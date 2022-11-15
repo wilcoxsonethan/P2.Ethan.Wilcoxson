@@ -45,23 +45,6 @@ function setup() {
     dd = String(today.getDate()).padStart(2, '0');
     mm = String(today.getMonth() + 1).padStart(2, '0');
     today = mm + '/' + dd
-    hr = hour();
-    min = minute();
-    if (min < 10) {
-        min = "0" + min;
-    }
-    if (hr >= 12) {
-        amPM = "PM";
-        if (hr !== 12) {
-            hr = hr - 12;
-        }
-    } else {
-        amPM = "AM";
-        if (hr === 0) {
-            hr = 12;
-        }
-    }
-    clock = hr + ":" + min + " " + amPM;
 
     //News Information from New York Times API
     copyright = newsAPI.copyright;
@@ -96,6 +79,23 @@ function setup() {
     sleepTime2 = healthData.healthData[1].sleepTime;
 }
 function draw() {
+    hr = hour();
+    min = minute();
+    if (min < 10) {
+        min = "0" + min;
+    }
+    if (hr >= 12) {
+        amPM = "PM";
+        if (hr !== 12) {
+            hr = hr - 12;
+        }
+    } else {
+        amPM = "AM";
+        if (hr === 0) {
+            hr = 12;
+        }
+    }
+    clock = hr + ":" + min + " " + amPM;
     background(255);
     fill(0);
     translate(width,0);
