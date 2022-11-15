@@ -1,0 +1,14 @@
+{
+  "healthData": [
+    {
+      "weight": "195 LBS",
+      "date" : "11/15",
+      "sleepTime" : "6 Hours"
+    },
+    {
+      "weight": "193 LBS",
+      "date" : "11/16",
+      "sleepTime" : "7 Hours"
+    }
+  ]
+}

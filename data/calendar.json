@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "type": "Human Computer Interaction",
+      "time": "11:00 AM",
+      "length": "1 Hour, 20 Minutes"
+    },
+    {
+      "type": "Life, Love, and Money",
+      "time": "12:30 PM",
+      "length": "1 Hour, 20 Minutes"
+    },
+    {
+      "type": "Work",
+      "time": "3:00 PM",
+      "length": "4 Hours"
+    },
+    {
+      "type": "Dinner",
+      "time": "7:15 PM",
+      "length": "45 Minutes"
+    },
+    {
+      "type": "Homework",
+      "time": "8:00 PM",
+      "length": "3 Hours"
+    }
+  ]
+}
